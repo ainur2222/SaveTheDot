@@ -272,7 +272,7 @@ fileprivate extension ViewController {
   }
   
   func getGameOverTitleAndMessage() -> (String, String) {
-    let elapsedSeconds = Int(elapsedTime) // if you divide by %60 then if player playes, for example 1 minute 4 seconds, "I try again 😂", "Seriously, you need more practice 😒" will be shown. But you wanted ("Off cause 😚", "Legend, olympic player, go 🇧🇷") to be shown
+    let elapsedSeconds = Int(elapsedTime) // if you divide by %60 then if player plays, for example 1 minute 4 seconds, "I try again 😂", "Seriously, you need more practice 😒" will be shown. But you wanted ("Off cause 😚", "Legend, olympic player, go 🇧🇷") to be shown
     switch elapsedSeconds {
     case 0..<10: return ("I try again 😂", "Seriously, you need more practice 😒")
     case 10..<30: return ("Another go 😉", "No bad, you are getting there 😁")
